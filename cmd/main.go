@@ -8,7 +8,7 @@ import (
 
 func main()	{
 	input := `q--3wer4301-4+r_e**
-	dog d1
+	dog d2
 	cat c1
 	cat c2
 	bird b1
