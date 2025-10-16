@@ -7,11 +7,7 @@ import (
 )
 
 func main()	{
-	input := `a
-
-	dog d1
-	cat c1
-	bird b1
+	input := `q--3wer4301-4+r_e**
 	end`
 	results := task1.AnimalFeeding(strings.NewReader(input))
 	fmt.Println(results)

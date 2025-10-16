@@ -94,8 +94,10 @@ func AnimalFeeding(stream io.Reader) ([]string){
 	}
 
 	for i, food := range(feeder){
-		animal := query[i % len(query)]
-		animal.Eat(food)
+		if (len(query) > 0){
+			animal := query[i % len(query)]
+			animal.Eat(food)
+		}
 	}
 
 	results := make([]string, len(query))
