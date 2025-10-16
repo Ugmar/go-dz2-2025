@@ -69,6 +69,13 @@ func AnimalFeeding(stream io.Reader) ([]string){
 	line := strings.TrimLeft(scanner.Text(), "\t ")
 
 	for line != "end"{
+
+		if line == ""{
+			scanner.Scan()
+			line = strings.TrimLeft(scanner.Text(), "\t ")
+			continue
+		}
+
 		elems := strings.Split(line, " ")
 		kind := elems[0]
 		name := elems[1]
